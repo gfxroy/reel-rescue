@@ -1,0 +1,17 @@
+{
+  "name": "reel-rescue",
+  "version": "0.1.0",
+  "type": "module",
+  "bin": {
+    "reel-rescue": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.0",
+    "typescript": "^5.7.0",
+    "vitest": "^2.1.0"
+  }
+}

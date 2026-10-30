@@ -7,7 +7,7 @@ export interface Report {
   width?: number; height?: number; fps?: number;
   recoveredSeconds: number; estimatedTotalSeconds?: number; framesRecovered: number; keyframes: number;
   bytesTotal: number; bytesUsable: number; bytesEmpty: number;
-  usedReference: boolean; warnings: string[]; verdict: 'full' | 'partial' | 'failed'; summary: string;
+  usedReference: boolean; needsReference?: boolean; warnings: string[]; verdict: 'full' | 'partial' | 'failed'; summary: string;
 }
 export interface RescueOptions { reference?: Blob; onProgress?: (p: Progress) => void; signal?: AbortSignal }
 export interface RescueResult { output: Blob | null; report: Report }
